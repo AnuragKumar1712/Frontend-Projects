@@ -1,0 +1,108 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    padding: none;
+    margin: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    align-items: center;
+    background: linear-gradient(14deg, #f940ff,#c400eb 50%, #5b42f3);
+    background-attachment: fixed;
+}
+
+.age-calculator{
+    width: 800px;
+    margin-top: 30vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+h2{
+    font-size: 34px;
+    margin-top: 20px;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+input[type="date"] {
+    padding: 8px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+button{
+    padding: 8px 16px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    color: #fff;
+    cursor: pointer;
+    transition: background-image 3s ease;
+}
+
+button:hover{
+    background-image: linear-gradient(#0c0d0d 0, #0c0d0d 100%);
+}
+
+#result{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/* Media Queries */
+
+/* For desktops and laptops */
+@media only screen and (min-width: 1200px) {
+    .age-calculator {
+        width: 800px;
+    }
+}
+
+/* For tablets and small laptops */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .age-calculator {
+        width: 600px;
+    }
+}
+
+/* For mobile devices */
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+    .age-calculator {
+        width: 400px;
+    }
+
+    input[type="date"] {
+        width: 300px;
+    }
+}
+
+/* For small mobile devices */
+@media only screen and (max-width: 424px) {
+    .age-calculator {
+        width: 300px;
+    }
+
+    input[type="date"] {
+        width: 250px;
+    }
+}
