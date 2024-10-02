@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Letter Popup</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <a class="button" onclick="toggleNewsLetter()">Subscribe Us</a>
+    <div class="hidden" id="newsLetter">
+        <h2>Join Our Exclusive News Letter</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ipsum.</p>
+        <div class="box">
+            <input type="email" placeholder="Enter Email">
+        </div>
+        <div class="box">
+            <button type="submit">Sign Up</button>
+        </div>
+        <a class="close" onclick="toggleNewsLetter()">
+            <i class="fa fa-times fa-2x" aria-hidden="false"></i>
+        </a>
+    </div>
+    <!-- Custom JS File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
